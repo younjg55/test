@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .notepad {
@@ -107,7 +107,35 @@ h1 {
     color: #666;
     text-align: center;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.tab-button.active {
+    background-color: #a8e6cf;
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #98d6bf;
+    color: white;
 }
 
 .task-container {
@@ -115,6 +143,49 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.page-button:hover {
+    background-color: #a8e6cf;
+    color: white;
+}
+
+.page-button:disabled {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.page-info {
+    color: #666;
+    font-size: 14px;
 }
 
 #taskList {
@@ -126,6 +197,7 @@ h1 {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #e8e8e8;
+    gap: 10px;
 }
 
 .task-item:last-child {
@@ -161,6 +233,13 @@ h1 {
     flex-grow: 1;
     color: #666;
     font-size: 16px;
+    min-width: 200px;
+}
+
+.date-text {
+    color: #999;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .delete-btn {
