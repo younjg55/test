@@ -15,15 +15,11 @@
 - CSS3
 - JavaScript (jQuery)
 
-## 라이브 데모
-
-https://[your-username].github.io/todo-list/
-
 ## 로컬에서 실행하기
 
 1. 저장소를 클론합니다:
 ```bash
-git clone https://github.com/[your-username]/todo-list.git
+git clone https://github.com/younjg55/test.git
 ```
 
 2. 클론한 디렉토리로 이동합니다:
