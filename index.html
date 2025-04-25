@@ -23,7 +23,7 @@
             </div>
             <h1>오늘의 할 일</h1>
             <div class="tab-buttons">
-                <button class="tab-button active" data-filter="active">진행중</button>
+                    <button class="tab-button active" data-filter="active">진행중</button>
                 <button class="tab-button" data-filter="completed">완료</button>
                 <button class="tab-button" data-filter="all">전체</button>
             </div>
@@ -39,8 +39,10 @@
                 </div>
             </div>
             <div class="input-section">
+                <input type="date" id="taskDate" class="date-input">
                 <input type="text" id="taskInput" placeholder="할 일을 입력하세요">
                 <button id="addButton">추가</button>
+                <button id="editButton" style="display: none;">수정</button>
             </div>
         </div>
     </div>
